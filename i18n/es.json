@@ -5,5 +5,9 @@
     "header.projects": "Proyectos",
     "config.theme.dark": "Modo Claro",
     "config.theme.light": "Modo Oscuro",
-    "config.lang": "Cambiar a Inglés"
+    "config.lang": "Cambiar a Inglés",
+    "hello.greet": "Hola, Soy",
+    "hello.description": "Soy una Desarrolladora de Softare, que ama aprender y esta emocionada de crecer mi carrera profesional.",
+    "hello.learn-more": "Aprende Más de Mí"
+
 }

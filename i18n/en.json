@@ -5,5 +5,8 @@
 	"header.projects": "Projects",
 	"config.theme.dark": "Light Mode",
 	"config.theme.light": "Dark Mode",
-	"config.lang": "Change to Spanish"
+	"config.lang": "Change to Spanish",
+    "hello.greet": "Hello, I'm",
+    "hello.description": "I'm a Software Developer, who loves learning and is eager to grow my professional career.",
+    "hello.learn-more": "Learn More About Me"
 }
