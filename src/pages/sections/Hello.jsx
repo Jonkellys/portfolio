@@ -18,8 +18,20 @@ export default function Hello({ translate }) {
 			</div>
 			<div className="w-4/12 h-5/6 flex flex-col items-center justify-center self-center">
 				<h1 className="text-6xl font-bold text-purple-400 dark:text-purple-300 mb-6">
-					<FormattedMessage id="hello.hello.part-1" />! 👋
-					<br />
+					<span className="w-full flex flex-row">
+						<FormattedMessage id="hello.hello.part-1" />!
+						<motion.p
+							animate={{ rotate: -25 }}
+							transition={{
+								repeat: 3,
+								repeatType: "reverse",
+								duration: 1,
+								delay: 1,
+							}}
+						>
+							👋
+						</motion.p>
+					</span>
 					<FormattedMessage id="hello.hello.part-2" /> Jonkellys Maestre
 				</h1>
 				<p className="text-3xl ml-2">
