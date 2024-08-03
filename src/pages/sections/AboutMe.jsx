@@ -3,76 +3,189 @@ import { motion } from "framer-motion";
 import cartoon from "../../images/image-cartoon.png";
 import Image from "next/image";
 
-export default function AboutMe({ translate }) {
+export default function AboutMe() {
 	return (
 		<motion.div
-			style={{ translateY: translate }}
-			className="w-full h-auto p-8 mt-8 transform"
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			className="w-full h-auto px-8 py-4 mt-8 transform"
 			id="who-am-i"
 		>
-			<h2 className="text-3xl mb-8 ml-8">
+			<h2 className="text-3xl mb-4 ml-8">
 				<FormattedMessage id="header.who-am-i" />
 			</h2>
-			<div className="w-full flex justify-around flex-wrap space-3 [&_div]:mb-6">
-				<div className="w-2/5 p-6 rounded-md transform rotate-[-2.5deg] flex justify-center items-center bg-blue-100">
-					<Image
-						src={cartoon}
-						alt="Cartoon Me"
-						className="size-3/4 transform rotate-[2.5deg]"
-					/>
+			<div className="w-full flex justify-around flex-wrap space-3">
+				<div className="w-1/2 h-auto p-4 text-lg">
+					<div className="flex flex-row flex-wrap pl-12 [&_span]:text-purple-500 [&_span]:mx-1">
+						<span className="mx-0">
+							<FormattedMessage id="about.intro.part-1" />
+						</span>
+						<p>
+							<FormattedMessage id="about.intro.part-2" />
+						</p>
+						<span>
+							<FormattedMessage id="about.intro.part-3" />
+						</span>
+						<p>
+							<FormattedMessage id="about.intro.part-4" />
+						</p>
+						<span>100%</span>
+						<p>
+							<FormattedMessage id="about.intro.part-5" />
+						</p>
+					</div>
+					<div className="ml-12 mt-4">
+						<p>
+							🎯{" "}
+							<span className="font-semibold">
+								<FormattedMessage id="about.goals.title" />
+							</span>
+						</p>
+						<p className="ml-4">
+							<FormattedMessage id="about.goals.one" />
+							<br />
+							<FormattedMessage id="about.goals.two" />
+							<br />
+							<FormattedMessage id="about.goals.three" />
+						</p>
+					</div>
 				</div>
-				<div className="w-2/5">
-					<ol className="w-full p-4 list-disc">
-						<li>
-							<strong>Jonkellys Maestre</strong>
-						</li>
-						<li>23 años</li>
-						<li>Back-end Developer</li>
-						<li>Venezuela</li>
-					</ol>
+				<div className="w-1/2 h-auto py-16 px-12 flex justify-center items-start">
+					<InfoBox title={<FormattedMessage id="about.education.title" />}>
+						<strong>
+							<FormattedMessage id="about.education.career" />
+						</strong>
+						<p className="ml-4 text-gray-400">2018 - 2024</p>
+						<p className="ml-4">
+							Universidad Nacional Experimental de la Fuerza Armada Nacional
+							Bolivariana (UNEFA)
+						</p>
+					</InfoBox>
 				</div>
-				{/* <div className="w-2/5">
-					<h3 className="text-xl mb-2">Education</h3>
-					<ul className="ml-4">
-						<li>
-							<strong className="mr-3">2018 - 2024</strong>
-							<p>Systems Engineering</p>
-							<i>
-								Universidad Nacional Experimental de la Fuerza Armada Nacional
-								Bolivariana (UNEFA)
-							</i>
-						</li>
-					</ul>
+				<div className="w-1/3 h-auto flex justify-center items-start">
+					<InfoBox title={<FormattedMessage id="about.languages.title" />}>
+						<div className="flex flex-col space-y-1 mt-1">
+							<ProgressBar
+								lang={<FormattedMessage id="about.languages.spanish" />}
+							>
+								<div className="w-5/5 rounded-full h-full bg-purple-400"></div>
+							</ProgressBar>
+							<ProgressBar
+								lang={<FormattedMessage id="about.languages.english" />}
+							>
+								<div className="w-5/5 rounded-full h-full bg-purple-400"></div>
+							</ProgressBar>
+							<ProgressBar
+								lang={<FormattedMessage id="about.languages.french" />}
+							>
+								<div className="w-3/5 rounded-full h-full bg-purple-400"></div>
+							</ProgressBar>
+							<ProgressBar
+								lang={<FormattedMessage id="about.languages.portuguese" />}
+							>
+								<div className="w-2/5 rounded-full h-full bg-purple-400"></div>
+							</ProgressBar>
+						</div>
+					</InfoBox>
 				</div>
-				<div className="w-2/5">
-					<h3 className="text-xl mb-2">Languages</h3>
-					<ol className="ml-4">
-						<li className="flex items-center">
-							<p>English</p>
-							<div className="w-40 h-4 rounded-full p-2 bg-white flex border border-gray-200">
-								<div className="bg-purple-300 rounded-full h-5/6 self-center text-center w-[20%]">
-									20%
-								</div>
+				<div className="w-1/3 h-46 flex justify-center items-start">
+					<InfoBox title={<FormattedMessage id="about.soft-skills.title" />}>
+						<div className="size-full flex justify-around flex-wrap text-center items-center [&_p]:m-2 [&_span]:text-purple-500 [&_span]:font-semibold">
+							<p>
+								<FormattedMessage id="about.soft-skills.one" />
+							</p>
+							<span>
+								<FormattedMessage id="about.soft-skills.line" />
+							</span>
+							<p>
+								<FormattedMessage id="about.soft-skills.two" />
+							</p>
+							<span>
+								<FormattedMessage id="about.soft-skills.line" />
+							</span>
+							<p>
+								<FormattedMessage id="about.soft-skills.three" />
+							</p>
+							<p>
+								<FormattedMessage id="about.soft-skills.four" />
+							</p>
+							<span>
+								<FormattedMessage id="about.soft-skills.line" />
+							</span>
+							<p>
+								<FormattedMessage id="about.soft-skills.five" />
+							</p>
+							<span>
+								<FormattedMessage id="about.soft-skills.line" />
+							</span>
+							<p>
+								<FormattedMessage id="about.soft-skills.six" />
+							</p>
+						</div>
+					</InfoBox>
+				</div>
+				<div className="w-1/3 h-46 flex justify-center items-start">
+					<InfoBox title={<FormattedMessage id="about.interests.title" />}>
+						<div className="size-full flex justify-around items-center space-x-14 px-4">
+							<div className="w-1/3 flex flex-col justify-center items-center text-center">
+								<span className="text-3xl">📚</span>
+								<p>
+									<FormattedMessage id="about.interests.one" />
+								</p>
 							</div>
-						</li>
-					</ol>
+							<div className="w-1/3 flex flex-col justify-center items-center text-center">
+								<span className="text-3xl">🐶</span>
+								<p>
+									<FormattedMessage id="about.interests.two" />
+								</p>
+							</div>
+							<div className="w-1/3 flex flex-col justify-center items-center text-center">
+								<span className="text-3xl">🎶</span>
+								<p>
+									<FormattedMessage id="about.interests.three" />
+								</p>
+							</div>
+						</div>
+					</InfoBox>
 				</div>
-				<div className="w-2/5">
-					<h3 className="text-xl mb-2">Interests</h3>
-				</div> */}
+				<div className="w-full h-auto my-12 p-4 rounded shadow border border-gray-800 flex flex-col items-center">
+					<h3 className="rounded bg-purple-200 text-xl text-gray-800 px-4 py-2 w-max -mt-8 mb-4">
+						<FormattedMessage id="about.hard-skills.title" />
+					</h3>
+					<div className="w-2/3 flex flex-row justify-around items-center text-center">
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JavaScript</p>
+						<p>PHP</p>
+						<p>Python</p>
+						<p>SQL</p>
+						<p>Tailwind</p>
+						<p>React</p>
+					</div>
+				</div>
 			</div>
 		</motion.div>
 	);
 }
 
-function ProgressBar({ percent }) {
+function ProgressBar({ lang, children }) {
 	return (
-		<div className="w-40 h-4 rounded-full p-2 bg-white flex border border-gray-200">
-			<div
-				className={`bg-purple-300 rounded-full h-5/6 self-center text-center w-8`}
-			>
-				{percent}
+		<div className="w-full h-auto flex flex-row items-center">
+			<h4 className="w-24">{lang}</h4>
+			<div className="w-40 h-4 rounded-full p-0.5 bg-gray-200 border border-gray-800">
+				{children}
 			</div>
+		</div>
+	);
+}
+
+function InfoBox({ title, children }) {
+	return (
+		<div className="h-full rounded relative shadow border border-gray-800 px-8 pb-4 pt-10">
+			<h3 className="rounded bg-purple-200 text-xl text-gray-800 px-4 py-2 w-max absolute -top-4 -left-4">
+				{title}
+			</h3>
+			{children}
 		</div>
 	);
 }
