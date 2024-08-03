@@ -1,7 +1,5 @@
 import { FormattedMessage } from "react-intl";
 import { motion } from "framer-motion";
-import cartoon from "../../images/image-cartoon.png";
-import Image from "next/image";
 
 export default function AboutMe() {
 	return (
