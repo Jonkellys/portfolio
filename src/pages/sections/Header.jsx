@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Menu() {
 	return (
-		<div className="menu h-12 flex py-2 justify-between z-[1000] text-gray-800 top-0 w-full pl-10 bg-gradient-to-br from-pink-200 to-purple-200 fixed">
+		<div className="menu h-12 flex py-2 justify-between z-[1000] text-gray-800 top-0 w-screen pl-10 bg-gradient-to-br from-pink-200 to-purple-200 fixed">
 			<div className="w-max flex justify-start">
 				<Link
 					href="#hello"

@@ -33,5 +33,7 @@
 	"about.interests.one": "Books",
 	"about.interests.two": "Dogs",
 	"about.interests.three": "Music",
-	"about.hard-skills.title": "Hard Skills"
+	"about.hard-skills.title": "Hard Skills",
+	"projects.description": "Check out my projects",
+	"projects.github": "Visit my Github"
 }

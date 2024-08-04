@@ -9,8 +9,7 @@ export default function Home() {
 	const translate = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
 	return (
-		<div className="w-screen relative h-auto bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50">
-			<div className="wavy-line w-full h-auto"></div>
+		<div className="w-screen relative h-auto pb-8 bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50">
 			<Menu />
 			<Hello />
 			<AboutMe />
