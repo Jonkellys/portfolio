@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FormattedMessage } from "react-intl";
 import { Menu } from "../sections/Header";
 import computer from "../../images/computer.png";
 
@@ -15,13 +16,22 @@ export default function Project() {
 					/>
 					<h3 className="text-lg text-center mb-4 self-center">Project Name</h3>
 					<p>
-						<strong>Status: </strong> Finished
+						<strong>
+							<FormattedMessage id="project.single.status" />
+						</strong>{" "}
+						Finished
 					</p>
 					<p>
-						<strong>Build by: </strong> Me
+						<strong>
+							<FormattedMessage id="project.single.build.by" />
+						</strong>{" "}
+						Me
 					</p>
 					<p>
-						<strong>Time used: </strong> 3 Months Aprox.
+						<strong>
+							<FormattedMessage id="project.single.time" />
+						</strong>{" "}
+						3 Months Aprox.
 					</p>
 					<a
 						className="py-2 px-3 self-center bg-white shadow rounded w-max mt-4 dark:bg-gray-700 hover:rounded-full"
@@ -41,7 +51,9 @@ export default function Project() {
 					</p>
 					<div className="flex flex-row my-4">
 						<div className="w-1/2 h-auto m-2">
-							<h4 className="text-md font-semibold">Characteristics</h4>
+							<h4 className="text-md font-semibold">
+								<FormattedMessage id="project.single.features" />
+							</h4>
 							<ul className="ml-4">
 								<li>Item 1</li>
 								<li>Item 2</li>
@@ -51,7 +63,9 @@ export default function Project() {
 							</ul>
 						</div>
 						<div className="w-1/2 h-auto m-2">
-							<h4 className="text-md font-semibold">Build With</h4>
+							<h4 className="text-md font-semibold">
+								<FormattedMessage id="project.single.build.with" />
+							</h4>
 							<ul className="ml-4">
 								<li>Item 1</li>
 								<li>Item 2</li>
@@ -62,7 +76,9 @@ export default function Project() {
 						</div>
 					</div>
 					<div className="w-full h-36">
-						<h4 className="text-md font-semibold mb-4">Screenshots</h4>
+						<h4 className="text-md font-semibold mb-4">
+							<FormattedMessage id="project.single.screenshots" />
+						</h4>
 						<div className="flex flex-col justify-center space-y-4 px-4 py-2">
 							<div className="w-full h-96 rounded bg-blue-600"></div>
 							<div className="w-full h-96 rounded bg-blue-600"></div>

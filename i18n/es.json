@@ -35,5 +35,11 @@
 	"about.interests.three": "Música",
   "about.hard-skills.title": "Habilidades Duras",
 	"projects.description": "Mira mis proyectos",
-	"projects.github": "Visita mi Github"
+	"projects.github": "Visita mi Github",
+	"project.single.status": "Estado: ",
+	"project.single.build.by": "Hecho por: ",
+	"project.single.time": "Tiempo usado: ",
+	"project.single.features": "Características",
+	"project.single.build.with": "Hecho con",
+	"project.single.screenshots": "Capturas de pantalla"
 }

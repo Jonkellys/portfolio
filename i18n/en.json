@@ -35,5 +35,11 @@
 	"about.interests.three": "Music",
 	"about.hard-skills.title": "Hard Skills",
 	"projects.description": "Check out my projects",
-	"projects.github": "Visit my Github"
+	"projects.github": "Visit my Github",
+	"project.single.status": "Status: ",
+	"project.single.build.by": "Build by: ",
+	"project.single.time": "Time used: ",
+	"project.single.features": "Features",
+	"project.single.build.with": "Build With",
+	"project.single.screenshots": "Screenshots"
 }
