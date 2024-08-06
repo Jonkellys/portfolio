@@ -1,8 +1,8 @@
 import { FormattedMessage } from "react-intl";
-import { ThemeSwitch, LangMenu } from "./OptionsMenu";
+import { ThemeSwitch, LangMenu } from "../../components/OptionsMenu";
 import Link from "next/link";
 
-export function Menu() {
+export default function Menu() {
 	return (
 		<div className="menu h-12 flex justify-between z-[1000] text-gray-800 top-0 w-screen pl-10 bg-gradient-to-br from-pink-200 to-purple-200 fixed">
 			<div className="w-max flex justify-start items-end">

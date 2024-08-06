@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FormattedMessage } from "react-intl";
-import { Menu } from "../sections/Header";
+import Menu from "../sections/Header";
 import computer from "../../images/computer.png";
 
 export default function Project() {

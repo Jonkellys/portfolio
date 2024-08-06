@@ -1,5 +1,5 @@
 import { useScroll, useTransform } from "framer-motion";
-import { Menu } from "./sections/Header";
+import Menu from "./sections/Header";
 import Hello from "./sections/Hello";
 import AboutMe from "./sections/AboutMe";
 import Projects from "./sections/Projects";
