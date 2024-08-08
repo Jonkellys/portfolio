@@ -1,4 +1,5 @@
 import { FormattedMessage } from "react-intl";
+import { FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
 import programming from "../../images/programming-cartoon.png";
 import Image from "next/image";
@@ -46,12 +47,15 @@ export default function Projects() {
 				</div>
 			</div>
 			<a
-				className="py-2 px-4 bg-gray-800 shadow rounded w-max text-gray-50 dark:bg-gray-600 hover:rounded-full"
+				className="py-2 px-4 bg-gray-800 flex flex-row items-center shadow rounded w-max text-gray-50 dark:bg-gray-600 hover:rounded-full"
 				href="http://github.com/Jonkellys/"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				🐱 <FormattedMessage id="projects.github" />
+				<FiGithub />
+				<p className="ml-2">
+					<FormattedMessage id="projects.github" />
+				</p>
 			</a>
 		</motion.div>
 	);

@@ -6,8 +6,8 @@ import {
 	Switch,
 } from "@headlessui/react";
 import { useRouter } from "next/router";
-import { FormattedMessage } from "react-intl";
 import { useState, useEffect } from "react";
+import { FiMoon, FiSun, FiGlobe } from "react-icons/fi";
 import Link from "next/link";
 
 export function ThemeSwitch() {
@@ -26,12 +26,14 @@ export function ThemeSwitch() {
 	return (
 		<Switch
 			onClick={changeTheme}
-			className="group inline-flex p-1 text-center size-8 items-center rounded-full bg-white transition shadow-sm "
+			className="transition-color rounded-t-lg p-3 text-xl border-t border-l border-r border-transparent hover:border-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-50 hover:text-gray-800 hover:bg-gray-50 hover:cursor-pointer"
+			// className="transition-color text-xl py-3 px-4 w-max text-center rounded-t-lg dark:hover:bg-gray-800 dark:hover:text-gray-50 hover:text-gray-800 hover:bg-gray-50 hover:cursor-pointer"
 		>
-			{dark && "☀️"}
-			{!dark && "🌙"}
+			{dark && <FiSun />}
+			{!dark && <FiMoon />}
 		</Switch>
 	);
+	// className="transition-color w-max px-6 pt-2 pb-3 text-center font-bold text-md mx-2 rounded-t-lg dark:hover:bg-gray-800 dark:hover:text-gray-50 hover:text-gray-800 hover:bg-gray-50 hover:cursor-pointer"
 }
 
 export function LangMenu() {
@@ -41,9 +43,9 @@ export function LangMenu() {
 		<Menu as="div">
 			<MenuButton
 				as="button"
-				className="rounded-full size-8 p-1 text-sm bg-white shadow-sm font-bold text-gray-800"
+				className="rounded-t-lg flex flex-row items-center transition-color px-3 py-2.5 border-t border-l border-r border-transparent hover:border-gray-300 text-center dark:hover:bg-gray-800 dark:hover:text-gray-50 hover:text-gray-800 hover:bg-gray-50 hover:cursor-pointer"
 			>
-				{locale.toUpperCase()}
+				<FiGlobe /> <p className="ml-1">{locale.toUpperCase()}</p>
 			</MenuButton>
 			<MenuItems
 				as="div"

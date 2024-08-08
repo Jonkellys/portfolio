@@ -48,7 +48,7 @@ export default function AboutMe() {
 						</p>
 					</div>
 				</div>
-				<div className="w-1/2 h-auto py-16 px-12 flex justify-center items-start">
+				<div className="w-1/2 h-auto p-16 flex justify-center items-start">
 					<InfoBox title={<FormattedMessage id="about.education.title" />}>
 						<strong>
 							<FormattedMessage id="about.education.career" />
@@ -126,19 +126,19 @@ export default function AboutMe() {
 					<InfoBox title={<FormattedMessage id="about.interests.title" />}>
 						<div className="size-full flex justify-around items-center space-x-14 px-4">
 							<div className="w-1/3 flex flex-col justify-center items-center text-center">
-								<span className="text-3xl">📚</span>
+								<span className="text-4xl mb-2">📚</span>
 								<p>
 									<FormattedMessage id="about.interests.one" />
 								</p>
 							</div>
 							<div className="w-1/3 flex flex-col justify-center items-center text-center">
-								<span className="text-3xl">🐶</span>
+								<span className="text-4xl mb-2">🐶</span>
 								<p>
 									<FormattedMessage id="about.interests.two" />
 								</p>
 							</div>
 							<div className="w-1/3 flex flex-col justify-center items-center text-center">
-								<span className="text-3xl">🎶</span>
+								<span className="text-4xl mb-2">🎶</span>
 								<p>
 									<FormattedMessage id="about.interests.three" />
 								</p>
@@ -146,7 +146,7 @@ export default function AboutMe() {
 						</div>
 					</InfoBox>
 				</div>
-				<div className="w-full h-auto my-12 p-4 rounded shadow border border-gray-800 flex flex-col items-center">
+				<div className="w-full h-auto my-12 p-4 rounded shadow border border-gray-800 dark:border-white flex flex-col items-center">
 					<h3 className="rounded bg-purple-200 text-xl text-gray-800 px-4 py-2 w-max -mt-8 mb-4">
 						<FormattedMessage id="about.hard-skills.title" />
 					</h3>
@@ -179,7 +179,7 @@ function ProgressBar({ lang, children }) {
 
 function InfoBox({ title, children }) {
 	return (
-		<div className="h-full rounded relative shadow border border-gray-800 px-8 pb-4 pt-10">
+		<div className="h-full rounded relative shadow border border-gray-800 dark:border-white px-8 pb-4 pt-10">
 			<h3 className="rounded bg-purple-200 text-xl text-gray-800 px-4 py-2 w-max absolute -top-4 -left-4">
 				{title}
 			</h3>

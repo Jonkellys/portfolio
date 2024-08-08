@@ -1,9 +1,10 @@
 import Image from "next/image";
 import image1 from "../../images/image1.png";
 import { FormattedMessage } from "react-intl";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-export default function Hello({ translate }) {
+export default function Hello() {
 	return (
 		<motion.div
 			id="hello"
@@ -38,11 +39,29 @@ export default function Hello({ translate }) {
 					<FormattedMessage id="hello.description" />
 				</p>
 			</div>
-			<div className="w-full h-1/6 mt-8 flex justify-center justify-self-center">
-				<div className="w-2/12 flex justify-around">
-					<span>✉️</span>
-					<span>🐱</span>
-					<span>🏢</span>
+			<div className="w-full h-1/6 mt-8 flex flex-col items-center justify-center justify-self-center">
+				<div className="w-2/12 flex justify-around text-xl">
+					<a
+						target="_blank"
+						className="rounded-full p-2 hover:bg-purple-400 dark:hover:text-gray-800"
+						href="mailto:jonkellysmaestre@gmail.com"
+					>
+						<FiMail />
+					</a>
+					<a
+						target="_blank"
+						className="rounded-full p-2 hover:bg-purple-400 dark:hover:text-gray-800"
+						href="https://github.com/Jonkellys/"
+					>
+						<FiGithub />
+					</a>
+					<a
+						target="_blank"
+						className="rounded-full p-2 hover:bg-purple-400 dark:hover:text-gray-800"
+						href="https://www.linkedin.com/in/jonkellys-maestre-6311422b6/"
+					>
+						<FiLinkedin />
+					</a>
 				</div>
 			</div>
 		</motion.div>

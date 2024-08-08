@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 import Menu from "../sections/Header";
 import computer from "../../images/computer.png";
+import { FiGithub } from "react-icons/fi";
 
 export default function Project() {
 	return (
@@ -18,28 +19,28 @@ export default function Project() {
 					<p>
 						<strong>
 							<FormattedMessage id="project.single.status" />
-						</strong>{" "}
+						</strong>
 						Finished
 					</p>
 					<p>
 						<strong>
 							<FormattedMessage id="project.single.build.by" />
-						</strong>{" "}
+						</strong>
 						Me
 					</p>
 					<p>
 						<strong>
 							<FormattedMessage id="project.single.time" />
-						</strong>{" "}
+						</strong>
 						3 Months Aprox.
 					</p>
 					<a
-						className="py-2 px-3 self-center bg-white shadow rounded w-max mt-4 dark:bg-gray-700 hover:rounded-full"
+						className="p-3 self-center text-xl font-bold bg-gray-300 shadow rounded w-max mt-4 dark:bg-gray-700 hover:rounded-full"
 						href="http://"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						🐱
+						<FiGithub />
 					</a>
 				</div>
 				<div className="w-8/12 h-[30rem] p-4 overflow-y-scroll">
