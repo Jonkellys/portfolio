@@ -2,6 +2,8 @@ import { FormattedMessage } from "react-intl";
 import { FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
 import programming from "../../images/programming-cartoon.png";
+import attendance from "../../images/projects/attendances-tracker.png";
+import transformers from "../../images/projects/transformers-under-control.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,30 +12,38 @@ export default function Projects() {
 		<motion.div
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
-			className="w-full h-auto px-8 py-4 my-8 transform"
+			className="w-full h-auto px-8 py-4 transform"
 			id="projects"
 		>
-			<h2 className="text-3xl mb-4 ml-8">
+			<h2 className="text-3xl ml-8">
 				<FormattedMessage id="header.projects" />
 			</h2>
 			<p className="ml-12 my-4">
 				<FormattedMessage id="projects.description" />
 			</p>
-			<div className="w-full h-[26rem] flex flex-row">
+			<div className="w-full h-[24rem] flex flex-row">
 				<div className="w-1/2 h-full flex justify-center items-center">
 					<div className="w-full h-max flex flex-row justify-around items-center flex-wrap py-4">
 						<Link
-							href="/"
-							className="size-40 rounded shadow-md bg-white hover:opacity-90 dark:bg-gray-600 p-6 flex flex-col items-center m-4"
+							href="https://github.com/Jonkellys/transformers-under-control"
+							className="size-40 rounded shadow-md bg-white hover:bg-gray-100 dark:bg-gray-600 p-6 flex flex-col items-center m-4"
 						>
-							<span className="text-4xl mb-6 text-center">⚡</span>
+							<Image
+								src={transformers}
+								alt="Transformers"
+								className="mb-3 justify-self-center size-14"
+							/>
 							<p className="text-md text-center">Transformers Under Control</p>
 						</Link>
 						<Link
-							href="/"
-							className="size-40 rounded shadow-md bg-white dark:bg-gray-600 p-6 flex flex-col items-center m-4"
+							href="https://github.com/Jonkellys/attendance-tracker"
+							className="size-40 rounded shadow-md bg-white hover:bg-gray-100 dark:bg-gray-600 p-6 flex flex-col items-center m-4"
 						>
-							<span className="text-4xl mb-6 text-center">🗓️</span>
+							<Image
+								src={attendance}
+								alt="Attendance"
+								className="mb-3 justify-self-center size-14"
+							/>
 							<p className="text-md text-center">Attendance Tracker</p>
 						</Link>
 					</div>
@@ -47,7 +57,7 @@ export default function Projects() {
 				</div>
 			</div>
 			<a
-				className="py-2 px-4 bg-gray-800 flex flex-row items-center shadow rounded w-max text-gray-50 dark:bg-gray-600 hover:rounded-full"
+				className="py-2 px-4 bg-gray-800 mt-6 flex flex-row items-center shadow rounded w-max text-gray-50 dark:bg-gray-600 hover:rounded-full"
 				href="http://github.com/Jonkellys/"
 				target="_blank"
 				rel="noopener noreferrer"
