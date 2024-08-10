@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 import Menu from "../sections/Header";
-import computer from "../../images/computer.png";
 import { FiGithub } from "react-icons/fi";
 
 export default function Project() {
@@ -11,7 +10,7 @@ export default function Project() {
 			<div className="w-full h-full mt-12 p-8 flex flex-row justify-around ">
 				<div className="w-3/12 h-4/6 bg-white dark:bg-gray-600 shadow-md p-8 self-center space-y-4 rounded-md flex flex-col justify-start">
 					<Image
-						src={computer}
+						src=""
 						className="size-16 self-center"
 						alt="project icon"
 					/>
