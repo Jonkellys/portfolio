@@ -25,7 +25,7 @@ export default function Menu() {
 					<FormattedMessage id="header.projects" />
 				</Link>
 			</div>
-			<div className="w-max flex justify-around items-end md:space-x-4">
+			<div className="w-max flex justify-around items-end space-x-2 md:space-x-4">
 				<LangMenu />
 				<ThemeSwitch />
 			</div>

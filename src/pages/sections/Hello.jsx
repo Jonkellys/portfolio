@@ -12,12 +12,12 @@ export default function Hello() {
 			whileInView={{ opacity: 1 }}
 			className="w-full z-10 h-auto relative transform p-8 mt-12 flex flex-col md:flex-row justify-center md:space-x-12 flex-wrap"
 		>
-			<div className="w-full mb-8 md:mb-0 md:w-5/12 h-5/6 z-[1100] flex justify-center items-center">
-				<div className="w-full md:size-3/4 rounded-full drop-shadow-xl flex justify-center items-center">
-					<Image className="md:ml-12 md:mt-8" src={image1} alt="Hi, it's me" />
+			<div className="w-full mb-8 md:mb-0 xl:w-5/12 md:w-6/12 h-5/6 z-[1100] flex justify-center items-center">
+				<div className="w-full xl:size-3/4 md:size-full rounded-full drop-shadow-xl flex justify-center items-center">
+					<Image className="xl:ml-12 xl:mt-8" src={image1} alt="Hi, it's me" />
 				</div>
 			</div>
-			<div className="w-full md:w-4/12 h-5/6 flex flex-col items-center justify-center self-center">
+			<div className="w-full md:w-5/12 h-5/6 flex flex-col items-center justify-center self-center">
 				<h1 className="text-6xl font-bold text-purple-400 dark:text-purple-300 mb-6">
 					<span className="w-full flex flex-row justify-center md:justify-start">
 						<FormattedMessage id="hello.hello.part-1" />!
@@ -38,7 +38,7 @@ export default function Hello() {
 					  Jonkellys Maestre
 					</div>
 				</h1>
-				<p className="text-3xl ml-2 text-center md:text-left">
+				<p className="text-3xl md:text-2xl xl:text-3xl ml-2 text-center md:text-left">
 					<FormattedMessage id="hello.description" />
 				</p>
 			</div>

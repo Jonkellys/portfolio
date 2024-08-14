@@ -15,18 +15,17 @@ export default function Projects() {
 			className="w-full h-auto px-8 py-4 transform"
 			id="projects"
 		>
-			<h2 className="text-3xl ml-8">
+			<h2 className="text-3xl md:ml-8">
 				<FormattedMessage id="header.projects" />
 			</h2>
-			<p className="ml-12 my-4">
+			<p className="md:ml-12 my-4">
 				<FormattedMessage id="projects.description" />
 			</p>
-			<div className="w-full h-[24rem] flex flex-row">
+			<div className="w-full h-max md:h-[24rem] flex flex-row">
 				<div className="w-1/2 h-full flex justify-center items-center">
-					<div className="w-full h-max flex flex-row justify-around items-center flex-wrap py-4">
+					<div className="w-full h-max flex flex-row justify-around items-center flex-wrap py-4 *:md:w-40 *:w-max *:rounded *:h-max *:shadow-md *:bg-white *:hover:bg-gray-100 *:dark:bg-gray-600 *:md:p-6 *:p-4 *:flex *:flex-col *:items-center *:m-4 ">
 						<Link
 							href="https://github.com/Jonkellys/transformers-under-control"
-							className="size-40 rounded shadow-md bg-white hover:bg-gray-100 dark:bg-gray-600 p-6 flex flex-col items-center m-4"
 						>
 							<Image
 								src={transformers}
@@ -37,7 +36,6 @@ export default function Projects() {
 						</Link>
 						<Link
 							href="https://github.com/Jonkellys/attendance-tracker"
-							className="size-40 rounded shadow-md bg-white hover:bg-gray-100 dark:bg-gray-600 p-6 flex flex-col items-center m-4"
 						>
 							<Image
 								src={attendance}

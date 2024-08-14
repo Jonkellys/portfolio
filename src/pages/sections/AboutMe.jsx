@@ -6,36 +6,30 @@ export default function AboutMe() {
 		<motion.div
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
-			className="w-full h-auto px-8 py-4 mt-8 transform"
+			className="w-full h-auto px-8 py-4 mt-8 md:mt-0 transform"
 			id="who-am-i"
 		>
-			<h2 className="text-3xl mb-4 ml-8">
+			<h2 className="text-3xl mb-4 md:ml-8">
 				<FormattedMessage id="header.who-am-i" />
 			</h2>
 			<div className="w-full flex justify-center flex-col md:flex-row md:justify-around flex-wrap space-3">
 				<div className="w-full md:w-1/2 h-auto p-4 text-lg">
-					<div className="flex flex-row flex-wrap pl-8 md:pl-12 [&_span]:mx-1 [&_span]:text-purple-500">
-						<span>
-							<FormattedMessage id="about.intro.part-1" />
+					<div className="flex flex-row flex-wrap justify-start md:pl-12 [&_span]:text-purple-500">
+						<span className="mr-1 text-xl">
+							<FormattedMessage id="about.intro.part-1" />,
 						</span>
-						<p>
-							<FormattedMessage id="about.intro.part-2" />
-						</p>
-						<span>
+						<FormattedMessage id="about.intro.part-2" />
+						<span className="mr-1">
 							<FormattedMessage id="about.intro.part-3" />
 						</span>
-						<p>
-							<FormattedMessage id="about.intro.part-4" />
-						</p>
-						<span>100%</span>
-						<p>
-							<FormattedMessage id="about.intro.part-5" />
-						</p>
+						<FormattedMessage id="about.intro.part-4" />
+						<span className="mx-1">100%</span>
+						<FormattedMessage id="about.intro.part-5" />
 					</div>
-					<div className="ml-8 md:ml-12 mt-6 md:mt-4">
+					<div className="md:ml-12 mt-6 md:mt-4">
 						<p>
 							🎯
-							<span className="font-semibold">
+							<span className="font-semibold"> 
 								<FormattedMessage id="about.goals.title" />
 							</span>
 						</p>
@@ -48,7 +42,7 @@ export default function AboutMe() {
 						</p>
 					</div>
 				</div>
-				<div className="w-full md:w-1/2 h-auto px-4 py-8 md:p-16 flex justify-center items-start">
+				<div className="w-full md:w-1/2 h-max md:px-0 px-4 py-8 md:px-8 md:mt-8 xl:p-16 flex justify-center items-start">
 					<InfoBox title={<FormattedMessage id="about.education.title" />}>
 						<strong>
 							<FormattedMessage id="about.education.career" />
@@ -60,7 +54,8 @@ export default function AboutMe() {
 						</p>
 					</InfoBox>
 				</div>
-				<div className="w-full md:w-1/3 h-auto flex flex-col mb-8 md:mb-0 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
+				<div className="flex flex-wrap flex-col md:flex-row md:justify-around" >
+				<div className="w-full xl:w-1/3 md:w-[45%] md:my-8 h-max flex flex-col mb-8 md:mb-0 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
 					<InfoBox title={<FormattedMessage id="about.languages.title" />}>
 						<div className="flex flex-col space-y-1 mt-1">
 							<ProgressBar
@@ -86,9 +81,9 @@ export default function AboutMe() {
 						</div>
 					</InfoBox>
 				</div>
-				<div className="w-full md:w-1/3 h-46 flex flex-col mb-8 md:mb-0 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
+				<div className="w-full xl:w-1/3 md:w-[45%] md:my-8 h-max md:h-auto xl:h-max flex flex-col mb-8 md:mb-0 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
 					<InfoBox title={<FormattedMessage id="about.soft-skills.title" />}>
-						<div className="size-full flex justify-around flex-wrap px-2 items-center [&_p]:m-2 [&_span]:text-purple-500 [&_span]:font-semibold">
+						<div className="size-full flex justify-around flex-wrap items-center xl:py-2 space-x-3 [&_p]:mb-2">
 							<p>
 								<FormattedMessage id="about.soft-skills.one" />
 							</p>
@@ -110,9 +105,9 @@ export default function AboutMe() {
 						</div>
 					</InfoBox>
 				</div>
-				<div className="w-full md:w-1/3 h-46 flex flex-col mb-8 md:mb-0 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
+				<div className="w-full xl:w-1/3 md:w-[45%] h-max flex flex-col mb-8 md:my-8 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
 					<InfoBox title={<FormattedMessage id="about.interests.title" />}>
-						<div className="size-full flex justify-around items-center space-x-14 px-4">
+						<div className="size-full flex justify-around items-center space-x-14 py-5 xl:py-5 md:py-0">
 							<div className="w-1/3 flex flex-col justify-center items-center text-center">
 								<span className="text-4xl mb-2">📚</span>
 								<p>
@@ -134,11 +129,11 @@ export default function AboutMe() {
 						</div>
 					</InfoBox>
 				</div>
-				<div className="w-full h-auto my-12 p-4 rounded shadow border border-gray-800 dark:border-white flex flex-col items-center">
-					<h3 className="rounded bg-purple-200 text-xl text-gray-800 px-4 py-2 w-max -mt-8 mb-4">
+				<div className="w-11/12 mx-[auto] md:mx-0 h-auto mb-8 md:w-[45%] xl:w-11/12 md:my-0 md:my-8 p-4 rounded shadow border border-gray-800 dark:border-white flex flex-col items-center">
+					<h3 className="rounded bg-purple-200 text-xl text-gray-800 px-4 py-2 w-max -mt-8 -ml-40 xl:ml-0 mb-4">
 						<FormattedMessage id="about.hard-skills.title" />
 					</h3>
-					<div className="w-2/3 flex flex-row justify-around items-center text-center">
+					<div className="flex flex-row justify-around items-center flex-wrap space-x-4 md:1/2 md:px-4 [&_p]:mb-2">
 						<p>HTML</p>
 						<p>CSS</p>
 						<p>JavaScript</p>
@@ -148,6 +143,7 @@ export default function AboutMe() {
 						<p>Tailwind</p>
 						<p>React</p>
 					</div>
+				</div>
 				</div>
 			</div>
 		</motion.div>
