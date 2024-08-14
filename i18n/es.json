@@ -1,6 +1,6 @@
 {
     "header.hello": "Hola",
-    "header.about-me": "Sobre Mí",
+    "header.who-am-i": "Quien Soy",
     "header.contact": "Contacto",
     "header.projects": "Proyectos",
     "config.theme.dark": "Modo Claro",
@@ -8,6 +8,6 @@
     "config.lang": "Cambiar a Inglés",
     "hello.greet": "Hola, Soy",
     "hello.description": "Soy una Desarrolladora de Softare, que ama aprender y esta emocionada de crecer mi carrera profesional.",
-    "hello.learn-more": "Aprende Más de Mí"
+    "hello.learn-more": "Aprende Más"
 
 }

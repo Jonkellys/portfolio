@@ -32,7 +32,7 @@ body {
 	}
 }
 
-.glass-effect:hover {
+.glass-effect {
 	background: linear-gradient(
 		135deg,
 		rgba(255, 255, 255, 0.1),
@@ -43,4 +43,39 @@ body {
 	/* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
 	border: 1px solid rgba(2, 2, 2, 0.18);
 	border-radius: 32px;
+}
+.wavy-block {
+	--mask:
+	radial-gradient(41.38px at 50% calc(100% - 58.5px), #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+	radial-gradient(41.38px at 50% calc(100% + 28.5px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+}
+
+.wavy-line {
+	--mask:
+		radial-gradient(45.38px at 50% calc(100% + 28.5px), #0000 calc(99% - 8px), #000 calc(101% - 8px) 99%, #0000 101%) calc(50% - 60px) calc(50% - 19px + .5px)/120px 38px repeat-x,
+		radial-gradient(45.38px at 50% -28.5px, #0000 calc(99% - 8px), #000 calc(101% - 8px) 99%, #0000 101%) 50% calc(50% + 19px)/120px 38px repeat-x;
+		-webkit-mask: var(--mask);
+		mask: var(--mask);
+		background-color: mediumpurple;
+}
+
+.menu-line {
+	transition: all 200ms step-end;
+}
+
+.menu:first-child:hover .menu-line {
+	/* transform: translateX(2.5rem); */
+	left: 2.5rem;
+}
+
+.menu:nth-child(2):hover .menu-line {
+left: 6.5rem;
+	/* transform: translateX(6.5rem); */
+}
+
+.menu:last-child:hover .menu-line {
+	left: 10.5rem;
+	/* transform: translateX(10.5rem); */
 }

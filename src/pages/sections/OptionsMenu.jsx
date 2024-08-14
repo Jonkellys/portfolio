@@ -9,13 +9,13 @@ export default function OptionsMenu() {
 	const changeTheme = () => {
 		setTheme(theme === "light" ? "dark" : "light");
 	};
-	if (theme === "dark") {
-		document.querySelector("html")?.classList.add("dark");
-	} else {
-		document.querySelector("html")?.classList.remove("dark");
-	}
-	// useEffect(() => {
-	// }, [theme]);
+	useEffect(() => {
+		if (theme === "dark") {
+			document.querySelector("html")?.classList.add("dark");
+		} else {
+			document.querySelector("html")?.classList.remove("dark");
+		}
+	}, [theme]);
 
 	const { locale, locales } = useRouter();
 
