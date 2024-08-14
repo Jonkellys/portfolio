@@ -1,5 +1,6 @@
 import { FormattedMessage } from "react-intl";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
+import { ThemeSwitch, LangMenu } from "./OptionsMenu";
 import Link from "next/link";
 import Hello from "./Hello";
 import AboutMe from "./AboutMe";
@@ -59,15 +60,21 @@ export function CircleMenu() {
 
 export function Menu() {
 	return (
-		<div className="menu h-12 flex py-2 justify-start z-[1000] text-gray-600 top-0 w-full pl-10 bg-gradient-to-br from-pink-200 to-purple-200 fixed">
-			<div className="w-max px-4 py-1 text-center font-bold text-md mx-2 hover:text-gray-700 hover:cursor-pointer hover:border-b-2 border-gray-700">
-				Hello
+		<div className="menu h-12 flex py-2 justify-between z-[1000] text-gray-800 top-0 w-full pl-10 bg-gradient-to-br from-pink-200 to-purple-200 fixed">
+			<div className="w-max flex justify-start">
+				<div className="w-max px-4 py-1 text-center font-bold text-md mx-2 rounded-full hover:text-gray-900 hover:bg-gray-50 hover:cursor-pointer hover:shadow-lg">
+					<FormattedMessage id="header.hello" />
+				</div>
+				<div className="w-max px-4 py-1 text-center font-bold text-md mx-2 rounded-full hover:text-gray-900 hover:bg-gray-50 hover:cursor-pointer hover:shadow-lg">
+					<FormattedMessage id="header.who-am-i" />
+				</div>
+				<div className="w-max px-4 py-1 text-center font-bold text-md mx-2 rounded-full hover:text-gray-900 hover:bg-gray-50 hover:cursor-pointer hover:shadow-lg">
+					<FormattedMessage id="header.projects" />
+				</div>
 			</div>
-			<div className="w-max px-4 py-1 text-center font-bold text-md mx-2 hover:text-gray-700 hover:cursor-pointer hover:border-b-2 border-gray-700">
-				Who Am I
-			</div>
-			<div className="w-max px-4 py-1 text-center font-bold text-md mx-2 hover:text-gray-700 hover:cursor-pointer hover:border-b-2 border-gray-700">
-				Projects
+			<div className="pr-10 w-max flex justify-around items-center space-x-4">
+				<LangMenu />
+				<ThemeSwitch />
 			</div>
 		</div>
 	);

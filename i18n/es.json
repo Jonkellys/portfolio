@@ -1,13 +1,8 @@
 {
     "header.hello": "Hola",
     "header.who-am-i": "Quien Soy",
-    "header.contact": "Contacto",
     "header.projects": "Proyectos",
-    "config.theme.dark": "Modo Claro",
-    "config.theme.light": "Modo Oscuro",
-    "config.lang": "Cambiar a Inglés",
-    "hello.greet": "Hola, Soy",
-    "hello.description": "Soy una Desarrolladora de Softare, que ama aprender y esta emocionada de crecer mi carrera profesional.",
-    "hello.learn-more": "Aprende Más"
-
+    "hello.hello.part-1": "Hola",
+    "hello.hello.part-2": "Soy",
+    "hello.description": "Una Desarrolladora de Venezuela buscando iniciar su carrera."
 }

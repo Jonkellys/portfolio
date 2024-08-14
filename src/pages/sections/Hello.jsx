@@ -17,16 +17,16 @@ export default function Hello({ translate }) {
 				</div>
 			</div>
 			<div className="w-4/12 h-5/6 flex flex-col items-center justify-center self-center">
-				<h1 className="text-6xl font-bold text-purple-300 mb-6">
-					Hello! 👋
+				<h1 className="text-6xl font-bold text-purple-400 dark:text-purple-300 mb-6">
+					<FormattedMessage id="hello.hello.part-1" />! 👋
 					<br />
-					I'm Jonkellys Maestre
+					<FormattedMessage id="hello.hello.part-2" /> Jonkellys Maestre
 				</h1>
 				<p className="text-3xl ml-2">
-					A Developer based in Venezuela looking to kickstar her career.
+					<FormattedMessage id="hello.description" />
 				</p>
 			</div>
-			<div className="w-full h-1/6 mt-6 flex justify-center justify-self-center">
+			<div className="w-full h-1/6 mt-8 flex justify-center justify-self-center">
 				<div className="w-2/12 flex justify-around">
 					<span>✉️</span>
 					<span>🐱</span>
