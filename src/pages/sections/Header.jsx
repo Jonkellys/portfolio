@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Menu() {
 	return (
-		<div className="h-12 flex justify-between z-[1000] text-gray-800 top-0 w-screen px-2 md:px-10 bg-gradient-to-br from-pink-200 to-purple-200 fixed">
+		<div className="h-12 flex justify-between z-[1000] text-gray-800 top-0 w-screen px-2 md:px-10 bg-gradient-to-br from-purple-300 to-purple-400 fixed">
 			<div className="w-max flex justify-start items-end">
 				<Link
 					href="/#hello"

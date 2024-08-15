@@ -17,11 +17,12 @@ export default function Hello() {
 					<Image className="xl:ml-12 xl:mt-8" src={image1} alt="Hi, it's me" />
 				</div>
 			</div>
-			<div className="w-full md:w-5/12 h-5/6 flex flex-col items-center justify-center self-center">
+			<div className="w-full md:w-5/12 h-5/6 px-2 flex flex-col items-center justify-center self-center">
 				<h1 className="text-6xl font-bold text-purple-400 dark:text-purple-300 mb-6">
 					<span className="w-full flex flex-row justify-center md:justify-start">
 						<FormattedMessage id="hello.hello.part-1" />!
 						<motion.p
+							className="mb-2"
 							animate={{ rotate: -25 }}
 							transition={{
 								repeat: 3,

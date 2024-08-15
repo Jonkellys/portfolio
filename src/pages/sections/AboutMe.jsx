@@ -14,12 +14,12 @@ export default function AboutMe() {
 			</h2>
 			<div className="w-full flex justify-center flex-col md:flex-row md:justify-around flex-wrap space-3">
 				<div className="w-full md:w-1/2 h-auto p-4 text-lg">
-					<div className="flex flex-row flex-wrap justify-start md:pl-12 [&_span]:text-purple-500">
+					<div className="flex flex-row flex-wrap justify-start md:pl-12 [&_span]:text-purple-400 dark:[&_span]:text-purple-300">
 						<span className="mr-1 text-xl">
 							<FormattedMessage id="about.intro.part-1" />,
 						</span>
 						<FormattedMessage id="about.intro.part-2" />
-						<span className="mr-1">
+						<span className="mr-1 2xl:ml-1">
 							<FormattedMessage id="about.intro.part-3" />
 						</span>
 						<FormattedMessage id="about.intro.part-4" />
@@ -29,7 +29,7 @@ export default function AboutMe() {
 					<div className="md:ml-12 mt-6 md:mt-4">
 						<p>
 							🎯
-							<span className="font-semibold"> 
+							<span className="font-semibold ml-1"> 
 								<FormattedMessage id="about.goals.title" />
 							</span>
 						</p>
@@ -130,7 +130,7 @@ export default function AboutMe() {
 					</InfoBox>
 				</div>
 				<div className="w-11/12 mx-[auto] md:mx-0 h-auto mb-8 md:w-[45%] xl:w-11/12 md:my-0 md:my-8 p-4 rounded shadow border border-gray-800 dark:border-white flex flex-col items-center">
-					<h3 className="rounded bg-purple-200 text-xl text-gray-800 px-4 py-2 w-max -mt-8 -ml-40 xl:ml-0 mb-4">
+					<h3 className="rounded bg-purple-200  dark:bg-purple-300 text-xl text-gray-800 px-4 py-2 w-max -mt-8 mb-4">
 						<FormattedMessage id="about.hard-skills.title" />
 					</h3>
 					<div className="flex flex-row justify-around items-center flex-wrap space-x-4 md:1/2 md:px-4 [&_p]:mb-2">
@@ -164,7 +164,7 @@ function ProgressBar({ lang, children }) {
 function InfoBox({ title, children }) {
 	return (
 		<div className="h-full rounded relative shadow border border-gray-800 dark:border-white px-8 pb-4 pt-10">
-			<h3 className="rounded bg-purple-200 text-xl text-gray-800 px-4 py-2 w-max absolute -top-4 -left-4">
+			<h3 className="rounded bg-purple-200  dark:bg-purple-300 text-xl text-gray-800 px-4 py-2 w-max absolute -top-4 -left-4">
 				{title}
 			</h3>
 			{children}
