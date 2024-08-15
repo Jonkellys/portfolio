@@ -42,7 +42,7 @@ export default function AboutMe() {
 						</p>
 					</div>
 				</div>
-				<div className="w-full md:w-1/2 h-max md:px-0 px-4 py-8 md:px-8 md:mt-8 xl:p-16 flex justify-center items-start">
+				<div className="w-full md:w-1/2 h-max md:px-0 px-4 py-8 md:px-8 md:mt-8 xl:px-16 flex justify-center items-start">
 					<InfoBox title={<FormattedMessage id="about.education.title" />}>
 						<strong>
 							<FormattedMessage id="about.education.career" />
@@ -55,7 +55,7 @@ export default function AboutMe() {
 					</InfoBox>
 				</div>
 				<div className="w-full flex flex-wrap flex-col md:flex-row md:justify-around" >
-				<div className="w-full xl:w-1/3 md:w-[45%] md:my-8 h-max flex flex-col mb-8 md:mb-0 px-2 md:px-0 md:flex-row md:justify-center md:items-start">
+				<div className="w-full xl:w-[30%] md:w-[45%] md:my-8 h-max flex flex-col mb-8 md:mb-0 px-2 md:px-0 md:flex-row md:justify-center md:items-start">
 					<InfoBox title={<FormattedMessage id="about.languages.title" />}>
 						<div className="flex flex-col space-y-1 mt-1 w-full">
 							<ProgressBar
@@ -81,9 +81,9 @@ export default function AboutMe() {
 						</div>
 					</InfoBox>
 				</div>
-				<div className="w-full xl:w-1/3 md:w-[45%] md:my-8 h-max md:h-auto xl:h-max flex flex-col mb-8 md:mb-0 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
+				<div className="w-full xl:w-[30%] md:w-[45%] md:my-8 h-max md:h-auto xl:h-max flex flex-col mb-8 md:mb-0 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
 					<InfoBox title={<FormattedMessage id="about.soft-skills.title" />}>
-						<div className="size-full flex justify-around flex-wrap items-center xl:py-2 space-x-3 [&_p]:mb-2">
+						<div className="size-full flex justify-around flex-wrap items-center xl:py-2 [&_p]:mb-2">
 							<p>
 								<FormattedMessage id="about.soft-skills.one" />
 							</p>
@@ -105,7 +105,7 @@ export default function AboutMe() {
 						</div>
 					</InfoBox>
 				</div>
-				<div className="w-full xl:w-1/3 md:w-[45%] h-max flex flex-col mb-8 md:my-8 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
+				<div className="w-full xl:w-[30%] md:w-[45%] h-max flex flex-col mb-8 md:my-8 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
 					<InfoBox title={<FormattedMessage id="about.interests.title" />}>
 						<div className="size-full flex justify-between items-center py-5 xl:py-5 md:py-0">
 							<div className="w-1/3 flex flex-col justify-center items-center text-center">
@@ -129,11 +129,11 @@ export default function AboutMe() {
 						</div>
 					</InfoBox>
 				</div>
-				<div className="w-11/12 mx-[auto] md:mx-0 h-auto mb-8 md:w-[45%] xl:w-11/12 md:my-0 md:my-8 p-4 rounded shadow border border-gray-800 dark:border-white flex flex-col items-center">
-					<h3 className="rounded bg-purple-200  dark:bg-purple-300 text-xl text-gray-800 px-4 py-2 w-max -mt-8 mb-4">
+				<div className="w-11/12 mx-[auto] md:mx-0 h-auto mb-8 md:w-[45%] xl:w-11/12 md:my-0 md:my-8 p-4 rounded relative shadow border border-gray-800 dark:border-white flex flex-col items-center">
+					<h3 className="rounded bg-purple-200 dark:bg-purple-300 text-xl text-gray-800 px-4 py-2 w-max -mt-8 mb-4 absolute -left-4 xl:static">
 						<FormattedMessage id="about.hard-skills.title" />
 					</h3>
-					<div className="flex flex-row justify-around items-center flex-wrap space-x-4 md:1/2 md:px-4 [&_p]:mb-2">
+					<div className="flex flex-row justify-around items-center flex-wrap space-x-4 mt-8 xl:mt-0 md:px-4 [&_p]:mb-2">
 						<p>HTML</p>
 						<p>CSS</p>
 						<p>JavaScript</p>
