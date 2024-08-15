@@ -54,10 +54,10 @@ export default function AboutMe() {
 						</p>
 					</InfoBox>
 				</div>
-				<div className="flex flex-wrap flex-col md:flex-row md:justify-around" >
+				<div className="w-full flex flex-wrap flex-col md:flex-row md:justify-around" >
 				<div className="w-full xl:w-1/3 md:w-[45%] md:my-8 h-max flex flex-col mb-8 md:mb-0 px-4 md:px-0 md:flex-row md:justify-center md:items-start">
 					<InfoBox title={<FormattedMessage id="about.languages.title" />}>
-						<div className="flex flex-col space-y-1 mt-1">
+						<div className="flex flex-col space-y-1 mt-1 w-full">
 							<ProgressBar
 								lang={<FormattedMessage id="about.languages.spanish" />}
 							>
@@ -153,8 +153,8 @@ export default function AboutMe() {
 function ProgressBar({ lang, children }) {
 	return (
 		<div className="w-full h-auto flex flex-row items-center">
-			<h4 className="w-24">{lang}</h4>
-			<div className="w-40 h-4 rounded-full p-0.5 bg-gray-200 border border-gray-800">
+			<h4 className="w-2/6 mr-2">{lang}</h4>
+			<div className="w-4/6 h-4 rounded-full p-0.5 bg-gray-200 border border-gray-800">
 				{children}
 			</div>
 		</div>
