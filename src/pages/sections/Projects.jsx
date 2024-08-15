@@ -21,9 +21,9 @@ export default function Projects() {
 			<p className="md:ml-12 my-4">
 				<FormattedMessage id="projects.description" />
 			</p>
-			<div className="w-full h-max md:h-[24rem] flex flex-row">
-				<div className="w-1/2 h-full flex justify-center items-center">
-					<div className="w-full h-max flex flex-row justify-around items-center flex-wrap py-4 *:md:w-40 *:w-max *:rounded *:h-max *:shadow-md *:bg-white *:hover:bg-gray-100 *:dark:bg-gray-600 *:md:p-6 *:p-4 *:flex *:flex-col *:items-center *:m-4 ">
+			<div className="w-full h-max md:h-[24rem] flex flex-col md:flex-row">
+				<div className="w-full md:w-1/2 h-max flex justify-center items-center order-2 md:order-1">
+					<div className="w-full h-max flex flex-row justify-around items-center flex-wrap py-4 *:md:w-40 *:w-3/4 *:rounded *:h-max *:shadow-md *:bg-white *:hover:bg-gray-100 *:dark:bg-gray-600 *:md:p-6 *:p-4 *:flex *:flex-col *:items-center *:m-4 ">
 						<Link
 							href="https://github.com/Jonkellys/transformers-under-control"
 						>
@@ -46,11 +46,11 @@ export default function Projects() {
 						</Link>
 					</div>
 				</div>
-				<div className="w-1/2 flex justify-center items-center">
+				<div className="w-full md:w-1/2 flex justify-end md:justify-center items-center order-1 md:order-2">
 					<Image
 						src={programming}
 						alt="Programming"
-						className="w-[25rem] h-auto drop-shadow-xl"
+						className="w-2/4 md:w-[25rem] h-auto drop-shadow-xl"
 					/>
 				</div>
 			</div>
